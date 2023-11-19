@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecom</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="sticky-top" style="background-color: #e3f2fd;">
+                <div class="container d-flex flex-column flex-md-row align-items-center pb-2 mb-4 " >
+                    <a href="home.html" class="d-flex align-items-center text-dark text-decoration-none">
+                        <h1><span style="color: red;">E</span><span style="color: aqua;">Com</span></h1>
+                    </a>
+                    <nav class="d-flex flex-md-row  mt-2 mt-md-0 ms-md-auto ">
+                        <a class="me-5 pt-3 text-dark text-decoration-none" href="home.html">Home</a>
+                        <a class="me-5 pt-3 text-dark text-decoration-none" href="shop.html">Shop</a>
+                        <a class="me-5 pt-3 text-dark text-decoration-none" href="shop.html">Sales</a>
+                        <a class="me-5 pt-3 text-dark text-decoration-none" href="about_us.html">About Us</a>
+                        <a class="me-5 pt-3 text-dark text-decoration-none" href="contact.html">Contact</a>
+                        <a href="cart.html"><button class="btn btn-outline-dark btn-sm" id="h-login">Cart</button></a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <!-- About us -->
+            <div class="d-flex flex-column gap-3">
+                <div class="d-flex about-box justify-content-between">
+                    <div>
+                        <img src="https://d2kh7o38xye1vj.cloudfront.net/wp-content/uploads/2018/02/4-1.jpg" alt=""
+                            width="450px" height="350px">
+                    </div>
+                    <div class=" about">
+                        <h1>About Us</h1>
+                        <p>
+                            A short paragraph describing your company's vision of what it <br>
+                            hopes to achieve in the future. This section is meant to inspire <br>
+                            people to join your company on its journey.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex about-box justify-content-between">
+                    <div class="my-5 vision">
+                        <h1>Our Vision</h1>
+                        <p>Use this section to describe your company and the products you <br>
+                            offer. You could share your company's story and details about <br>
+                            why you are in business. The goal is to create a connection with <br>
+                            the visitor and give them confidence to buy from you.</p>
+                    </div>
+                    <div class="mx-5">
+                        <img src="data:image/png;base64,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"
+                            alt="" width="450px" height="350px">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column gap-5 mt-5">
+                <!-- Social media post -->
+                <div class="text-center m-5">
+                    <h2>Social Media Posts</h2>
+                    <p>This is a gallary to showcase images from your recent social posts</p>
+                </div>
+                <div id="customerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <img src="https://m.media-amazon.com/images/I/71PXHvmjz1L._AC_SY200_.jpg" alt=""
+                                        width="200px" height="200px">
+
+                                </div>
+                                <div>
+                                    <img src="https://m.media-amazon.com/images/I/710SxepIfiL._AC_SY200_.jpg" alt=""
+                                        width="200px" height="200px">
+
+                                </div>
+                                <div>
+                                    <img src="https://m.media-amazon.com/images/I/61RpRYFb2wL._AC_SY200_.jpg" alt=""
+                                        width="200px" height="200px">
+
+                                </div>
+                                <div>
+                                    <img src="https://m.media-amazon.com/images/I/71efZuOyE2L._AC_SY200_.jpg" alt=""
+                                        width="200px" height="200px">
+
+                                </div>
+                                <div>
+                                    <img src="https://m.media-amazon.com/images/I/71l2-gWOnpL._AC_SY200_.jpg" alt=""
+                                        width="200px" height="200px">
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <img src="https://m.media-amazon.com/images/I/61iZMVtMAoL._AC_SY200_.jpg" alt=""
+                                        width="150px" height="200px">
+
+                                </div>
+                                <div>
+                                    <img src="https://m.media-amazon.com/images/I/61-M8rjGl0L._AC_SY200_.jpg" alt=""
+                                        width="150px" height="200px">
+
+                                </div>
+                                <div>
+                                    <img src="https://m.media-amazon.com/images/I/91eY68L5j9L._AC_SY200_.jpg" alt=""
+                                        width="200px" height="200px">
+
+                                </div>
+                                <div>
+                                    <img src="https://m.media-amazon.com/images/I/71nkap6IJ2L._AC_SY200_.jpg" alt=""
+                                        width="200px" height="200px">
+
+                                </div>
+                                <div>
+                                    <img src="https://images-eu.ssl-images-amazon.com/images/I/51sPXbeTfZL._AC_UL160_SR160,160_.jpg"
+                                        alt="" width="200px" height="200px">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer class="mt-5">
+            <div class="bg-light newsletter">
+                <div class="container pt-5">
+                    <h2>Join Our Newsletter</h2>
+                    <input type="text"
+                        style=" border:none; border-bottom:  1px solid black; width: 500px;background-color: transparent;"
+                        placeholder="YOUR EMAIL">
+                        <button class="btn btn-primary h-sub subscribe" id="newsletter" onclick="subscribe()">Subscribe</button>
+                        <h5 id="subs"></h5>
+                <img src="https://cdn-icons-png.flaticon.com/128/20/20837.png" alt="facebook" width="20"
+                            height="20" class=" mt-2">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="instagram" width="20"
+                            height="20" class="mt-2 d-inline-block">
+                        <img src="https://cdn-icons-png.flaticon.com/128/733/733635.png" alt="twitter" width="20"
+                            height="20" class="mt-2 d-inline-block">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex container justify-content-between">
+                <div class="d-flex gap-1 mt-3">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1294/1294391.png" alt="" width="15" height="15"
+                        class="d-inline-block mt-1">
+                    <p>2021 All Rights Reserved</p>
+                </div>
+                <div class="d-flex gap-3 mt-3">
+                    <a href="" class="h-f-a">Help & Info</a>
+                    <a href="" class="h-f-a">Terms & Privacy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="js/subscribe.js"></script>
+
+</body>
+
+</html>

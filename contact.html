@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    
+   
+
+   
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="sticky-top" style="background-color: #e3f2fd;">
+                <div class="container d-flex flex-column flex-md-row align-items-center pb-2 mb-4 " >
+                    <a href="home.html" class="d-flex align-items-center text-dark text-decoration-none">
+                        <h1><span style="color: red;">E</span><span style="color: aqua;">Com</span></h1>
+                    </a>
+                    <nav class="d-flex flex-md-row  mt-2 mt-md-0 ms-md-auto ">
+                        <a class="me-5 pt-3 text-dark text-decoration-none" href="home.html">Home</a>
+                        <a class="me-5 pt-3 text-dark text-decoration-none" href="shop.html">Shop</a>
+                        <a class="me-5 pt-3 text-dark text-decoration-none" href="shop.html">Sales</a>
+                        <a class="me-5 pt-3 text-dark text-decoration-none" href="about_us.html">About Us</a>
+                        <a class="me-5 pt-3 text-dark text-decoration-none" href="contact.html">Contact</a>
+                        <a href="cart.html"><button class="btn btn-outline-dark btn-sm" id="h-login">Cart</button></a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="mt-5">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-around gap-5">
+                <img id="h-img-1"
+                    src="https://code.market/imgproxy/2023/05/Ecom-Multi-Vendor-Ecommerce-Flutter-STRIPE.jpg"
+                    alt="" width="550px" height="400px">
+                <div class="mx-5">
+                    <form action="" id="msgform">
+                    <h2>
+                        Contact Us
+                    </h2>
+                    <p class="lh-1">Fill out the form below ond we will cantact you as soon as possible.</p>
+                    <p id="note"></p>
+                    <div class="d-flex flex-column gap-5">
+                        <div class="d-flex gap-5">
+                            <input type="text" placeholder="Your Name" id="name"
+                                style="width: 200px; border: none; border-bottom: 1px solid black;">
+                            <input type="text" placeholder="Your Email" id="email"
+                                style="width: 200px; border: none; border-bottom: 1px solid black;">
+                        </div>
+                        <div class="d-flex gap-5">
+                            <select name="" id="topic" style="width: 200px; border: none; border-bottom: 1px solid black;">
+                                <option value="">Choose Topic</option>
+                                <option value="product">Product</option>
+                                <option value="Service">Service</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <input type="text" placeholder="Message" id="msg"
+                                style="width: 200px; border: none; border-bottom: 1px solid black;">
+                        </div>
+
+                    </div>
+
+                    <button class="btn btn-primary mt-4 px-5" id="send" >Send</button>
+                    <h6 class="mt-2" id="sendmsg" style="background-color: rgb(181, 131, 165);"></h6>
+                </form>
+                </div>
+            </div>
+            <div class="mt-5">
+                <h2 class="text-center">Popular Products</h2>
+                <div class="mt-5 d-flex justify-content-around">
+                    <div class="card cards ">
+                        <img class="mx-3 ps-3 mt-3"
+                            src="https://m.media-amazon.com/images/I/51jUcRK69ML._AC_QL95_SX300_SY250_FMwebp_.jpg"
+                            alt="" width="250px">
+                        <p class="text-center">Dell G15 5520 Gaming Laptop, Intel i5-12500H,16GB DDR5,512GB SSD,NVIDIA
+                            RTX 3050 (4GB GDDR6),15.6"(39.62cm) FHD WVA AG 120Hz 250 nits, Backlit KB Orange, Win 11 +
+                            MSO'21,Dark Shadow Grey,2.81kg</p>
+                        <div class="d-flex ms-3">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-empty.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <span> &nbsp;95</span>
+                        </div>
+                        <div class="d-flex gap-1 ms-3">
+                            <span style="font-size: 20px; font-weight: bold;">₹</span>
+                            <span style="font-size: 25px; color: brown; font-weight: bold;">45,799.00</span>
+                        </div>
+                        <a href="product.html" class="text-center text-decoration-none ">Add to Cart</a>
+                    </div>
+                    <div class="card cards">
+                        <img class="mx-3 ps-5 mt-3"
+                            src="https://m.media-amazon.com/images/I/91IxU4BBVKL._AC_QL10_SX300_SY250_FMwebp_.jpg"
+                            alt="" width="200px" height="180px">
+                        <p class="text-center">HP 320 15.6-inch Backpacks/Trolley Pass-Through; Padded Back Panel;
+                            Padded air mesh Panel/Hand wash and air Dry/Padded Laptop Pocket/1 Year Limited Warranty
+                            (793A6AA)</p>
+                        <div class="d-flex ms-3">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-empty.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <span> &nbsp;95</span>
+                        </div>
+                        <div class="d-flex gap-1 ms-3">
+                            <span style="font-size: 20px; font-weight: bold;">₹</span>
+                            <span style="font-size: 25px; color: brown; font-weight: bold;">799.00</span>
+                        </div>
+                        <a href="product.html" class="text-center text-decoration-none ">Add to Cart</a>
+                    </div>
+                    <div class="card cards">
+                        <img class="mx-3 ps-3 mt-3"
+                            src="https://m.media-amazon.com/images/I/51jUcRK69ML._AC_QL95_SX300_SY250_FMwebp_.jpg"
+                            alt="" width="250px">
+                        <p class="text-center">Dell G15 5520 Gaming Laptop, Intel i5-12500H,16GB DDR5,512GB SSD,NVIDIA
+                            RTX 3050 (4GB GDDR6),15.6"(39.62cm) FHD WVA AG 120Hz 250 nits, Backlit KB Orange, Win 11 +
+                            MSO'21,Dark Shadow Grey,2.81kg</p>
+                        <div class="d-flex ms-3">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-empty.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <span> &nbsp;95</span>
+                        </div>
+                        <div class="d-flex gap-1 ms-3">
+                            <span style="font-size: 20px; font-weight: bold;">₹</span>
+                            <span style="font-size: 25px; color: brown; font-weight: bold;">45,799.00</span>
+                        </div>
+                        <a href="product.html" class="text-center text-decoration-none ">Add to Cart</a>
+                    </div>
+                    <div class="card cards">
+                        <img class="mx-3 ps-5 mt-3"
+                            src="https://m.media-amazon.com/images/I/91IxU4BBVKL._AC_QL10_SX300_SY250_FMwebp_.jpg"
+                            alt="" width="200px" height="180px">
+                        <p class="text-center">HP 320 15.6-inch Backpacks/Trolley Pass-Through; Padded Back Panel;
+                            Padded air mesh Panel/Hand wash and air Dry/Padded Laptop Pocket/1 Year Limited Warranty
+                            (793A6AA)</p>
+                        <div class="d-flex ms-3">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-empty.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <span> &nbsp;95</span>
+                        </div>
+                        <div class="d-flex gap-1 ms-3">
+                            <span style="font-size: 20px; font-weight: bold;">₹</span>
+                            <span style="font-size: 25px; color: brown; font-weight: bold;">799.00</span>
+                        </div>
+                        <a href="product.html" class="text-center text-decoration-none ">Add to Cart</a>
+                    </div>
+                    <div class="card cards">
+                        <img class="mx-3 ps-5 mt-3"
+                            src="https://m.media-amazon.com/images/I/91IxU4BBVKL._AC_QL10_SX300_SY250_FMwebp_.jpg"
+                            alt="" width="200px" height="180px">
+                        <p class="text-center">HP 320 15.6-inch Backpacks/Trolley Pass-Through; Padded Back Panel;
+                            Padded air mesh Panel/Hand wash and air Dry/Padded Laptop Pocket/1 Year Limited Warranty
+                            (793A6AA)</p>
+                        <div class="d-flex ms-3">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-fullfill.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <img src="https://m.media-amazon.com/images/G/31/perc/star-empty.svg" alt="rating"
+                                width="20" height="20" class="d-inline-block">
+                            <span> &nbsp;95</span>
+                        </div>
+                        <div class="d-flex gap-1 ms-3">
+                            <span style="font-size: 20px; font-weight: bold;">₹</span>
+                            <span style="font-size: 25px; color: brown; font-weight: bold;">799.00</span>
+                        </div>
+                        <a href="product.html" class="text-center text-decoration-none ">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="mt-5">
+            <div class="bg-light newsletter">
+                <div class="container pt-5">
+                    <h2>Join Our Newsletter</h2>
+                    <input type="text"
+                        style=" border:none; border-bottom:  1px solid black; width: 500px;background-color: transparent;"
+                        placeholder="YOUR EMAIL">
+                        <button class="btn btn-primary h-sub subscribe" id="newsletter" onclick="subscribe()">Subscribe</button>
+                        <h5 id="subs"></h5>
+                         <img src="https://cdn-icons-png.flaticon.com/128/20/20837.png" alt="facebook" width="20"
+                            height="20" class=" mt-2">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="instagram" width="20"
+                            height="20" class="mt-2 d-inline-block">
+                        <img src="https://cdn-icons-png.flaticon.com/128/733/733635.png" alt="twitter" width="20"
+                            height="20" class="mt-2 d-inline-block">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex container justify-content-between">
+                <div class="d-flex gap-1 mt-3">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1294/1294391.png" alt="" width="15" height="15"
+                        class="d-inline-block mt-1">
+                    <p>2021 All Rights Reserved</p>
+                </div>
+                <div class="d-flex gap-3 mt-3">
+                    <a href="" class="h-f-a">Help & Info</a>
+                    <a href="" class="h-f-a">Terms & Privacy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/subscribe.js"></script>
+
+</body>
+
+</html>

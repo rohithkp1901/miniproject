@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECom</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="fixed-top" style="background-color: #e3f2fd;">
+                <div class="container d-flex flex-column flex-md-row align-items-center  " >
+                    <a href="home.html" class="d-flex align-items-center text-dark text-decoration-none">
+                        <h1><span style="color: red;">E</span><span style="color: aqua;">Com</span></h1>
+                    </a>
+                    <nav class="d-flex flex-md-row  mt-2 mt-md-0 ms-md-auto ">
+                        <a class="me-5 pt-3 text-dark text-decoration-none" href="home.html">Home</a>
+                        <a class="me-5 pt-3 text-dark text-decoration-none" href="shop.html">Shop</a>
+                        <a class="me-5 pt-3 text-dark text-decoration-none" href="shop.html">Sales</a>
+                        <a class="me-5 pt-3 text-dark text-decoration-none" href="about_us.html">About Us</a>
+                        <a class="me-5 pt-3 text-dark text-decoration-none" href="contact.html">Contact</a>
+                        <a href="cart.html"><button class="btn btn-outline-dark btn-sm" id="h-login">Cart</button></a>
+                    </nav>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-around pt-5 mt-5">
+                <div class="w-50 pt-5">
+                    <p class="lh-1">SKU: 21185</p>
+                    <h1 style="padding-bottom: 20px;" id="p-name">Dell Laptop</h1>
+                    <p class="p-dell" id="p-para">Dell G15 5520 Gaming Laptop, Intel i5-12500H,16GB DDR5,512GB SSD,</p>
+                    <p class="p-dell">NVIDIA RTX 3050 (4GB GDDR6),15.6"(39.62cm) FHD WVA AG 120Hz 250 nits,</p>
+                    <p class="p-dell"> Backlit KB Orange, Win 11 + MSO'21,Dark Shadow Grey,2.81kg</p>
+                    <div class="pt-4">
+                        <span style="font-size: 20px; font-weight: bold;">₹</span>
+                        <span style="font-size: 25px; color: brown; font-weight: bold;" id="p-price">45,799.00</span>
+                    </div>
+                    <div class="m-3 pt-4 quantity-box d-flex gap-3">
+                        <input type="number" id="quantity" value="1" min="1" style=" text-align: center; width: 50px;">
+                        <button class="btn btn-primary btn-sm" id="prod-addtocart">Add To Cart</button>
+                    </div>
+                    <div class="d-flex gap-3"><h6>Amount:</h6>
+                        <p id="amount"></p>
+    </div>
+                </div>
+                <div>
+                    <div class="d-flex flex-column gap-2">
+                        <img src="https://m.media-amazon.com/images/I/51jUcRK69ML._SL1080_.jpg" class="main-image" id="p-main"
+                            alt="" width="300px" height="300px">
+                        <div>
+                            <img src="https://m.media-amazon.com/images/I/51jUcRK69ML._SL1080_.jpg" class="thumbnail"
+                                alt="" width="30px" height="30px" onclick="changeImage(this)">
+                            <img src="https://m.media-amazon.com/images/I/61YXfBpCi0L._SL1080_.jpg" class="thumbnail"
+                                alt="" width="30px" height="30px" onclick="changeImage(this)">
+                            <img src="https://m.media-amazon.com/images/I/61VSv07kqoL._SL1080_.jpg" class="thumbnail"
+                                alt="" width="30px" height="30px" onclick="changeImage(this)">
+                            <img src="https://m.media-amazon.com/images/I/61wvtYDZUEL._SL1080_.jpg" class="thumbnail"
+                                alt="" width="30px" height="30px" onclick="changeImage(this)">
+                            <img src="https://m.media-amazon.com/images/I/61tC8Oke7QL._SL1080_.jpg" class="thumbnail"
+                                alt="" width="30px" height="30px" onclick="changeImage(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="container m-5">
+            <!-- related product -->
+            <h2 class="text-center">Related Products</h2>
+            <div class="d-flex justify-content-between m-5">
+                <div style="width: 33.33%;">
+                    <img src="https://m.media-amazon.com/images/I/415bB9NY0LL._AC_SR320,320_.jpg" alt="" width="300"
+                        height="300">
+                    <h6 style="width: 300px;"><a href="product.html">MSI Cyborg 15, Intel 12th Gen. i5-12450H, 40CM FHD 144Hz Gaming
+                            Laptop…</a></h6>
+                    <p class="prod-related">
+                        <span style="font-size: 15px; font-weight: bold;">₹</span>
+                        <span style="font-size: 20px; color: brown; font-weight: bold;">45,799.00</span>
+                    </p>
+                    <button class="prod-a" style="border: none; background-color: transparent;" id="cartb">Add To Cart</button>
+                </div>
+                <div style="width: 33.33%;">
+                    <img src="https://m.media-amazon.com/images/I/41dCsY9mw-L._AC_SR320,320_.jpg" alt="" width="300"
+                        height="300">
+                    <h6 style="width: 300px;"><a href="product.html">Acer Nitro 5 Gaming Laptop AMD Ryzen™ 7 7735HS Octa-Core
+                            Processor- (16GB/ 512…</a></h6>
+                    <p class="prod-related">
+                        <span style="font: size 15px;; font-weight: bold;">₹</span>
+                        <span style="font-size: 20px; color: brown; font-weight: bold;">45,799.00</span>
+                    </p>
+                    
+                    <button class="prod-a" style="border: none; background-color: transparent;">Add To Cart</button>
+                </div>
+                <div style="width: 33.33%;">
+                    <img src="https://m.media-amazon.com/images/I/51AefEl-n8L._AC_SR320,320_.jpg" alt="" width="300"
+                        height="300">
+                    <h6 style="width: 300px;"><a href="product.html">Acer Predator Helios Neo 16 Gaming Laptop 13th Gen Intel Core
+                            i5 Processor (16 GB/5...</a></h6>
+                    <p class="prod-related">
+                        <span style="font-size: 15px; font-weight: bold;">₹</span>
+                        <span style="font-size: 20px; color: brown; font-weight: bold;">45,799.00</span>
+                    </p>
+                    <button class="prod-a" style="border: none; background-color: transparent;">Add To Cart</button>
+                </div>
+            </div>
+
+        </main>
+        <div class="d-flex mt-5 justify-content-around">
+            <div class="w-50 pt-5">
+                <h1 class="text-center lh-1 fs-1">
+                    <p>Customer</p>
+                    <p> Review</p>
+                </h1>
+            </div>
+            <div class="w-50">
+                <div id="customerCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex gap-4">
+                                <div class="customer-review ">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/156/156855.png" alt=""
+                                        width="100px" height="70px">
+                                    <p style="color: gray;">
+                                        "A review from a customer who benefited from
+                                        your product. Reviews can be a highly effective
+                                        way of establishing credibility and increasing your
+                                        company's reputation .*
+                                    </p>
+                                    <h6>Customer Name</h6>
+                                </div>
+                                <div class="customer-review ">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/156/156855.png" alt=""
+                                        width="100px" height="70px">
+                                    <p style="color: gray;">
+                                        "A review from a customer who benefited from
+                                        your product. Reviews can be a highly effective
+                                        way of establishing credibility and increasing your
+                                        company's reputation .*
+                                    </p>
+                                    <h6>Customer Name</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex gap-5">
+                                <div class="customer-review ">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/156/156855.png" alt=""
+                                        width="100px" height="70px">
+                                    <p style="color: gray;">
+                                        "A review from a customer who benefited from
+                                        your product. Reviews can be a highly effective
+                                        way of establishing credibility and increasing your
+                                        company's reputation .*
+                                    </p>
+                                    <h6>Customer Name</h6>
+                                </div>
+                                <div class="customer-review ">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/156/156855.png" alt=""
+                                        width="100px" height="70px">
+                                    <p style="color: gray;">
+                                        "A review from a customer who benefited from
+                                        your product. Reviews can be a highly effective
+                                        way of establishing credibility and increasing your
+                                        company's reputation .*
+                                    </p>
+                                    <h6>Customer Name</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-5">
+            <div class="bg-light newsletter">
+                <div class="container pt-5">
+                    <h2>Join Our Newsletter</h2>
+                    <input type="text"
+                        style=" border:none; border-bottom:  1px solid black; width: 500px;background-color: transparent;"
+                        placeholder="YOUR EMAIL" id="newsletterp">
+                        <button class="btn btn-primary h-sub subscribe" id="newsletter" onclick="subscribe()">Subscribe</button>
+                <h5 id="subs"></h5><h5 id="st"></h5>
+                 <div class="d-flex gap-3">
+                        <img src="https://cdn-icons-png.flaticon.com/128/20/20837.png" alt="facebook" width="20"
+                            height="20" class=" mt-2">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="instagram" width="20"
+                            height="20" class="mt-2 d-inline-block">
+                        <img src="https://cdn-icons-png.flaticon.com/128/733/733635.png" alt="twitter" width="20"
+                            height="20" class="mt-2 d-inline-block">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex container justify-content-between">
+                <div class="d-flex gap-1 mt-3">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1294/1294391.png" alt="" width="15" height="15"
+                        class="d-inline-block mt-1">
+                    <p>2021 All Rights Reserved</p>
+                </div>
+                <div class="d-flex gap-3 mt-3">
+                    <a href="" class="h-f-a">Help & Info</a>
+                    <a href="" class="h-f-a">Terms & Privacy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/single_product.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="js/home.js"></script>
+        <script src="js/subscribe.js"></script>
+    
+
+</body>
+
+</html>
